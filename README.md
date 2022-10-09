@@ -7,7 +7,7 @@
 git clone https://github.com/CiroLee/bf-go
 
 # install pkg
-cd yourpath/bf-fo
+cd yourpath/bf-go
 get mod download
 
 # dev
