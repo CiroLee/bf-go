@@ -20,4 +20,21 @@ go run xxx/main.go -from en -to zh hello
 ```
 
 ps:     
-different from **[bf](https://github.com/CiroLee/bf)**, command args must be placed first     
+- different from **[bf](https://github.com/CiroLee/bf)**, command args must be placed first   
+- the repo doesn't give config.go file. config is used to save appid and key which are for baidu translate api. you can use your onwn config. the structure follows:      
+
+```shell
+# config/config.go
+
+package config
+
+type secrets struct {
+	Appid string
+	Key   string
+}
+
+var Secrets = secrets{
+	Appid: "xxxxx",
+	Key:   "xxxx",
+}
+```
